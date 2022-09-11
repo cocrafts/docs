@@ -1,0 +1,5 @@
+{
+	"extends": "@metacraft/tsconfig/application.json",
+	"include": ["index*.js", "src"],
+	"exclude": ["node_modules"]
+}
