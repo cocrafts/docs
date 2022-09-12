@@ -1,17 +1,15 @@
 import { FC } from 'react';
-import { StyleSheet, View } from 'react-native';
-import { Text } from '@metacraft/ui';
+import { Provider as MetacraftProvider } from '@metacraft/ui';
+import { docsTheme } from 'utils/theme';
+
+import ApplicationStack from './stacks';
 
 export const App: FC = () => {
 	return (
-		<View style={styles.container}>
-			<Text>App</Text>
-		</View>
+		<MetacraftProvider theme={docsTheme}>
+			<ApplicationStack />
+		</MetacraftProvider>
 	);
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-	container: {},
-});
