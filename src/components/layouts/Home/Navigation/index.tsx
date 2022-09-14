@@ -5,15 +5,16 @@ import { ThemeSizes } from '@metacraft/ui';
 import { iStyles } from 'utils/style';
 
 import Item from './Item';
-import { navigationItems } from './shared';
+import { NavigationConfig, navigationItems } from './shared';
 
 const { Flag } = stormIcons;
 
 interface Props {
 	sizes: ThemeSizes;
+	onNavigate?: (item: NavigationConfig) => void;
 }
 
-export const HomeNavigation: FC<Props> = ({ sizes }) => {
+export const HomeNavigation: FC<Props> = ({ sizes, onNavigate }) => {
 	const navContainer: ViewStyle = {
 		flexDirection: 'row',
 		marginLeft: 100,
@@ -28,7 +29,7 @@ export const HomeNavigation: FC<Props> = ({ sizes }) => {
 				</TouchableOpacity>
 				<View style={navContainer}>
 					{navigationItems.map((item, i) => {
-						return <Item key={i} item={item} />;
+						return <Item key={i} item={item} onPress={onNavigate} />;
 					})}
 				</View>
 			</View>

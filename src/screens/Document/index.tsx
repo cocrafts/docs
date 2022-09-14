@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { ScrollView, StyleSheet, View, ViewStyle } from 'react-native';
-import { Markdown, themeState } from '@metacraft/ui';
+import { Markdown, Text, themeState } from '@metacraft/ui';
 import { NavigationProp, RouteProp } from '@react-navigation/native';
 import HomeLayout from 'components/layouts/Home';
 import PageGlance from 'components/PageGlance';
@@ -34,7 +34,8 @@ export const DocumentScreen: FC<Props> = ({ route, navigation }) => {
 		paddingLeft: 16 + sizes.leftNavigation,
 		paddingRight: 16, // + rightPaneSize,
 		marginHorizontal: 'auto',
-		paddingTop: 20,
+		paddingTop: 18,
+		paddingBottom: 32,
 	};
 
 	const onNavigate = ({ id }: SectionConfig) => {
@@ -51,6 +52,7 @@ export const DocumentScreen: FC<Props> = ({ route, navigation }) => {
 		<HomeLayout>
 			<View style={contentContainer}>
 				<ScrollView contentContainerStyle={scrollContainerStyle}>
+					<Text style={styles.pageTitle}>{section.title}</Text>
 					<Markdown content={section?.content as string} />
 				</ScrollView>
 			</View>
@@ -79,5 +81,9 @@ const styles = StyleSheet.create({
 	innerContainer: {
 		flex: 1,
 		paddingHorizontal: 24,
+	},
+	pageTitle: {
+		fontSize: 32,
+		fontWeight: '500',
 	},
 });

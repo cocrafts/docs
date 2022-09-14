@@ -1,4 +1,7 @@
-import { LinkingOptions } from '@react-navigation/native';
+import {
+	createNavigationContainerRef,
+	LinkingOptions,
+} from '@react-navigation/native';
 import {
 	CardStyleInterpolators,
 	StackNavigationOptions,
@@ -39,4 +42,15 @@ export const linking: LinkingOptions<RootParamList> = {
 			},
 		},
 	},
+};
+
+export const navigationRef = createNavigationContainerRef<RootParamList>();
+
+export const navigate = (
+	name: keyof RootParamList,
+	params?: RootParamList[keyof RootParamList],
+) => {
+	if (navigationRef.isReady()) {
+		navigationRef.navigate(name, params as never);
+	}
 };
