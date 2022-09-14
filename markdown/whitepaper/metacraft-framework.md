@@ -1,4 +1,3 @@
-### Metacraft Framework
 Metacraft Framework, explained in simple language, is a virtual `collaboration space` to strengthen the mutual connection of GameFi Developers, Players, Builders…
 
 Metacraft Framework unveils the ability of fast scaling and lean operation GameFi Developers, simplifying the process of creating a GameFi Project. While still exciting the contributors when they can try any roles they want, and get the benefit for every contribution they've made, even the smallest toward any GameFi projects they want. And by operating blockchain technology, we're doing the best to our ability to keep things as transparent and fair as much as we could.

@@ -1,5 +1,3 @@
-### Technology
-
 Metacraft loves open source and has it in our heart, most of our project is currently public in [Official Github organization](https://github.com/cocrafts). Allow “anyone can join, and build together” always number one priority since day one.
 
 #### Transparent and open

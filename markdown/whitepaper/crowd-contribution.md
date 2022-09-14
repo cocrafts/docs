@@ -1,5 +1,3 @@
-### Crowd Contribution
-
 Metacraft Framework is open-source and built by the crowd community.
 
 We need it transparent, clear, and valuable for everyone in the community - this is the reason we have developed Collaboration Platform for Builder and Player with the plan that is opened step by step:

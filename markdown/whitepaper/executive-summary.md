@@ -1,5 +1,3 @@
-### Executive Summary
-
 With the vast amount of GameFi projects released in the last 4 years, GameFi is undeniably a booming sector.
 
 As GameFi has proved the advantages for both Players and Game Developers/ Builders as enabling true digital ownership, decentralization, and expanding the border of a video game beyond just entertainment. But still, at the moment, GameFi is not a "Eureka", yet! There are limitations that we believe by solving, we are getting closer to expanding this sector to a new frontier.

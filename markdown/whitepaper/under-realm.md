@@ -1,4 +1,3 @@
-### Under Realm
 ![alt text](https://github.com/cocrafts/whitepaper/blob/master/assets/img/under-realm.png?raw=true)
 
 **Under Realm: Rise of Magic** - the first game in ATEM world produced mainly by Metacraft Studio. We chose a *“not much challenging*” 2D type which is a turn-based Trading card game, and there are 4 reason behind this decision:

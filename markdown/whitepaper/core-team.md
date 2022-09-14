@@ -1,4 +1,3 @@
-### Core Team
 At Metacraft, core team is the gatekeeper and governor.
 
 Gatekeeper makes sure that everything is developed in the right direction.

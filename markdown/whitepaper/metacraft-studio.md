@@ -1,5 +1,3 @@
-### Metacraft Studio
-
 Long story short, Metacraft is a Decentralized Game Studio!
 
 All started with the question “What does it take to create something with zero skill and knowledge of that field?” — Lots of time, by yourself, or, lots of help, from everyone!
