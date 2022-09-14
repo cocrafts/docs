@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Linking, ScrollView, StyleSheet, View, ViewStyle } from 'react-native';
+import { ScrollView, StyleSheet, View, ViewStyle } from 'react-native';
 import { Hyperlink, Markdown, Text, themeState } from '@metacraft/ui';
 import { NavigationProp, RouteProp } from '@react-navigation/native';
 import HomeLayout from 'components/layouts/Home';
@@ -38,12 +38,6 @@ export const DocumentScreen: FC<Props> = ({ route, navigation }) => {
 		paddingBottom: 32,
 	};
 
-	const onEdit = () => {
-		if (section.uri) {
-			Linking.openURL(section.uri);
-		}
-	};
-
 	const onNavigate = ({ id }: SectionConfig) => {
 		const [, sectionId, placeId] = id?.split('/') || [];
 
@@ -58,7 +52,7 @@ export const DocumentScreen: FC<Props> = ({ route, navigation }) => {
 		<HomeLayout>
 			<View style={contentContainer}>
 				<ScrollView contentContainerStyle={scrollContainerStyle}>
-					<Hyperlink title="Edit this page" onPress={onEdit} />
+					<Hyperlink title="Edit this page" href={section.uri} />
 					<Text style={styles.pageTitle}>{section.title}</Text>
 					<Markdown content={section?.content as string} />
 				</ScrollView>
