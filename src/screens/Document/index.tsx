@@ -6,21 +6,19 @@ import HomeLayout from 'components/layouts/Home';
 import PageGlance from 'components/PageGlance';
 import PageNavigator from 'components/PageNavigator';
 import { RootParamList } from 'stacks/shared';
-import { sectionGroups } from 'utils/content';
+import { SectionConfig } from 'utils/content';
 import { useSnapshot } from 'utils/hook';
+
+import { extractSection } from './shared';
 
 interface Props {
 	navigation: NavigationProp<RootParamList, 'Document'>;
 	route: RouteProp<RootParamList, 'Document'>;
 }
 
-export const DocumentScreen: FC<Props> = ({ route }) => {
+export const DocumentScreen: FC<Props> = ({ route, navigation }) => {
 	const { sizes } = useSnapshot(themeState);
-	const { section = 'whitepaper', place } = route.params || {};
-	const sections = sectionGroups[section];
-	const activeSection = place
-		? sections.find((i) => i.route === place)
-		: sections[0];
+	const { sections, section } = extractSection(route.params);
 
 	const contentContainer: ViewStyle = {
 		position: 'absolute',
@@ -33,21 +31,36 @@ export const DocumentScreen: FC<Props> = ({ route }) => {
 	const scrollContainerStyle: ViewStyle = {
 		width: '100%',
 		maxWidth: maxContentWidth,
-		paddingLeft: sizes.leftNavigation,
-		paddingRight: rightPaneSize,
+		paddingLeft: 16 + sizes.leftNavigation,
+		paddingRight: 16, // + rightPaneSize,
 		marginHorizontal: 'auto',
+		paddingTop: 20,
+	};
+
+	const onNavigate = ({ id }: SectionConfig) => {
+		const [, sectionId, placeId] = id?.split('/') || [];
+
+		navigation.navigate('Document', {
+			group: route.params?.group || 'guide',
+			section: sectionId,
+			place: placeId || '',
+		});
 	};
 
 	return (
 		<HomeLayout>
 			<View style={contentContainer}>
 				<ScrollView contentContainerStyle={scrollContainerStyle}>
-					<Markdown content={activeSection?.content as string} />
+					<Markdown content={section?.content as string} />
 				</ScrollView>
 			</View>
 			<View style={styles.floatContainer}>
-				<PageNavigator sizes={sizes} sections={sections} />
-				<PageGlance size={rightPaneSize} />
+				<PageNavigator
+					sizes={sizes}
+					sections={sections}
+					onNavigate={onNavigate}
+				/>
+				{/*<PageGlance size={rightPaneSize} />*/}
 			</View>
 		</HomeLayout>
 	);

@@ -1,10 +1,10 @@
-import { homeSections } from './home';
-import { SectionConfig } from './internal';
-import { whitepaperSections } from './whitepaper';
+import { guideMatrix } from './guide';
+import { SectionMatrix } from './internal';
+import { whitepaperMatrix } from './whitepaper';
 
-export const sectionGroups: Record<string, SectionConfig[]> = {
-	home: homeSections,
-	whitepaper: whitepaperSections,
+export const sectionMatrices: Record<string, SectionMatrix> = {
+	guide: guideMatrix,
+	whitepaper: whitepaperMatrix,
 };
 
 export * from './internal';

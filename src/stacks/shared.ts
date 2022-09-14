@@ -20,8 +20,10 @@ export const screenOptions: ScreenOptions = {
 };
 
 export type DocumentParamList = {
+	group?: string;
 	section?: string;
 	place?: string;
+	glance?: string;
 };
 
 export type RootParamList = {
@@ -32,7 +34,9 @@ export const linking: LinkingOptions<RootParamList> = {
 	prefixes: ['https://docs.stormgate.io'],
 	config: {
 		screens: {
-			Document: '/:group?/:section?',
+			Document: {
+				path: '/:group?/:section?/:place?',
+			},
 		},
 	},
 };
