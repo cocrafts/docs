@@ -59,5 +59,6 @@ const styles = StyleSheet.create({
 	},
 	innerContainer: {
 		flexDirection: 'row',
+		paddingLeft: 10,
 	},
 });

@@ -9,9 +9,10 @@ interface Props {
 export const PageGlance: FC<Props> = ({ size = 150 }) => {
 	const containerStyle: ViewStyle = {
 		position: 'absolute',
-		top: 0,
+		top: 30,
 		right: 0,
 		width: size,
+		paddingRight: 16,
 	};
 
 	return (
