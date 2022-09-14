@@ -18,7 +18,7 @@ interface Props {
 export const PageNavigator: FC<Props> = ({ sections, sizes, onNavigate }) => {
 	const containerStyle: ViewStyle = {
 		position: 'absolute',
-		top: 75,
+		top: 50,
 		left: 0,
 		width: sizes.leftNavigation,
 		paddingLeft: 16,

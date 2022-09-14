@@ -5,7 +5,7 @@ const guideSections: SectionConfig[] = [
 		route: 'introduction',
 		title: 'Introduction',
 		content: require('../../../markdown/guide/introduction.md'),
-		uri: baseUri + '/markdown/home/introduction.md',
+		uri: baseUri + '/markdown/guide/introduction.md',
 	},
 	{
 		route: 'account',

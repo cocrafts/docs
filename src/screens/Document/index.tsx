@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { ScrollView, StyleSheet, View, ViewStyle } from 'react-native';
-import { Markdown, Text, themeState } from '@metacraft/ui';
+import { Linking, ScrollView, StyleSheet, View, ViewStyle } from 'react-native';
+import { Hyperlink, Markdown, Text, themeState } from '@metacraft/ui';
 import { NavigationProp, RouteProp } from '@react-navigation/native';
 import HomeLayout from 'components/layouts/Home';
 import PageGlance from 'components/PageGlance';
@@ -34,8 +34,14 @@ export const DocumentScreen: FC<Props> = ({ route, navigation }) => {
 		paddingLeft: 16 + sizes.leftNavigation,
 		paddingRight: 16, // + rightPaneSize,
 		marginHorizontal: 'auto',
-		paddingTop: 18,
+		paddingTop: 52,
 		paddingBottom: 32,
+	};
+
+	const onEdit = () => {
+		if (section.uri) {
+			Linking.openURL(section.uri);
+		}
 	};
 
 	const onNavigate = ({ id }: SectionConfig) => {
@@ -52,6 +58,7 @@ export const DocumentScreen: FC<Props> = ({ route, navigation }) => {
 		<HomeLayout>
 			<View style={contentContainer}>
 				<ScrollView contentContainerStyle={scrollContainerStyle}>
+					<Hyperlink title="Edit this page" onPress={onEdit} />
 					<Text style={styles.pageTitle}>{section.title}</Text>
 					<Markdown content={section?.content as string} />
 				</ScrollView>
