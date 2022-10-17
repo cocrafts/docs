@@ -35,6 +35,12 @@ const guideSections: SectionConfig[] = [
 				content: require('../../../markdown/guide/token/buy.md'),
 				uri: baseUri + '/markdown/guide/token/buy.md',
 			},
+			{
+				route: 'unlock-schedule',
+				title: 'Unlock Schedule',
+				content: require('../../../markdown/guide/token/unlock-schedule.md'),
+				uri: baseUri + '/markdown/guide/token/unlock-schedule.md',
+			},
 		],
 	},
 	{
