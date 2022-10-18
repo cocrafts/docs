@@ -1,8 +1,8 @@
 *Preparation*: To begin, make sure you have a [Solflare Wallet](https://docs.solflare.com/solflare/onboarding/how-to-create-a-new-wallet "How to create Solflare Wallet") installed on your browser, or use one of the wallets supported by Wallet Connect ([Phantom Wallet](https://help.phantom.app/hc/en-us/articles/8071074929043-How-to-create-a-new-wallet "How to create Phantom Wallet")). Purchasing on a desktop browser will give you a smoother purchasing experience. 
 
 #### Step 1: Input MEMI amount
-- Access [Buy Token page](https://stormgate.io/buy-tokens)
-- Input MEMI amount you want to buy (Min. 100$ - Max. 8,000$)
+- Access [Buy Token section](https://stormgate.io)
+- Input MEMI amount you want to buy (Min. 50$ - Max. 8,000$)
 *Note: The exchange rate is displayed according to the moment you access Stormgate landing page*
 
 #### Step 2: Connect Wallet
@@ -22,11 +22,13 @@
 > If you get any problems, please refer “The issues you might have” below
 
 #### Step 4: Check your Profile</h3>
-Click on `Go to your Profile` and view schedules to withdraw
+Navigate to  [Your Profile](https://stormgate.io/profile) and view schedules to withdraw
 >$MESH (Metacraft Shard) — is the locked form of $MEMI represented on [Stormgate.io](https://stormgate.io) interface. Unlocked $MESH can be withdrawn to the e-wallet as $MEMI.
 
 ---
+
 #### The issues you might have:
+
 ##### 1.Cannot click on “Buy Token now”
 `Buy Token now` is unavailable for clicking (gray color) if your balance is NOT enough for purchasing.
 You need to top up your cryptocurrency and come back [Buy Token page](https://stormgate.io/buy-tokens) later.
