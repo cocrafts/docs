@@ -8,20 +8,26 @@ const guideSections: SectionConfig[] = [
 		uri: baseUri + '/markdown/guide/introduction.md',
 	},
 	{
-		route: 'account',
-		title: 'Account',
+		route: 'getting-started',
+		title: 'Getting Started',
 		children: [
+			{
+				route: 'welcome',
+				title: 'Welcome',
+				content: require('../../../markdown/guide/getting-started/welcome.md'),
+				uri: baseUri + '/markdown/guide/getting-started/welcome.md',
+			},
 			{
 				route: 'create-account',
 				title: 'Create Account',
-				content: require('../../../markdown/guide/account/create-account.md'),
-				uri: baseUri + '/markdown/guide/account/create-account.md',
+				content: require('../../../markdown/guide/getting-started/create-account.md'),
+				uri: baseUri + '/markdown/guide/getting-started/create-account.md',
 			},
 			{
 				route: 'withdraw',
 				title: 'Withdraw',
-				content: require('../../../markdown/guide/account/withdraw.md'),
-				uri: baseUri + '/markdown/guide/account/withdraw.md',
+				content: require('../../../markdown/guide/getting-started/withdraw.md'),
+				uri: baseUri + '/markdown/guide/getting-started/withdraw.md',
 			},
 		],
 	},
