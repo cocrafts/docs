@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
-import { StyleSheet, TouchableOpacity, View, ViewStyle } from 'react-native';
+import { StyleSheet, View, ViewStyle } from 'react-native';
 import { stormIcons } from '@metacraft/icons';
-import { ThemeSizes } from '@metacraft/ui';
+import { Hyperlink, ThemeSizes } from '@metacraft/ui';
 import { iStyles } from 'utils/style';
 
 import Item from './Item';
@@ -24,9 +24,9 @@ export const HomeNavigation: FC<Props> = ({ sizes, onNavigate }) => {
 	return (
 		<View style={styles.container}>
 			<View style={[iStyles.contentContainer, styles.innerContainer]}>
-				<TouchableOpacity activeOpacity={0.9}>
+				<Hyperlink href="https://stormgate.io" target="_self">
 					<Flag size={100} style={styles.flag} />
-				</TouchableOpacity>
+				</Hyperlink>
 				<View style={navContainer}>
 					{navigationItems.map((item, i) => {
 						return <Item key={i} item={item} onPress={onNavigate} />;
