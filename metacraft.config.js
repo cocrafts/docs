@@ -38,19 +38,6 @@ const copyAssets = (configs) => {
 	return configs;
 };
 
-const externals = (configs) => {
-	// configs.plugins.push(new BundleAnalyzerPlugin());
-
-	configs.externals = {
-		react: 'React',
-		lodash: '_',
-		'react-dom': 'ReactDOM',
-		'react-art': 'ReactART',
-	};
-
-	return configs;
-};
-
 const customLoaders = (configs) => {
 	configs.module.rules.push({
 		test: /\.md$/i,
@@ -63,7 +50,7 @@ const customLoaders = (configs) => {
 module.exports = {
 	useBabel: true,
 	buildId: () => 'app',
-	webpackMiddlewares: [setEnvironments, copyAssets, externals, customLoaders],
+	webpackMiddlewares: [setEnvironments, copyAssets, customLoaders],
 	moduleAlias: {
 		global: {
 			'react-native': 'react-native-web',
