@@ -23,6 +23,12 @@ const guideSections: SectionConfig[] = [
 				content: require('../../../markdown/guide/getting-started/create-account.md'),
 				uri: baseUri + '/markdown/guide/getting-started/create-account.md',
 			},
+						{
+				route: 'view-balance',
+				title: 'View Your Balance',
+				content: require('../../../markdown/guide/getting-started/view-balance.md'),
+				uri: baseUri + '/markdown/guide/getting-started/view-balance.md',
+			},
 			{
 				route: 'withdraw',
 				title: 'Withdraw',
