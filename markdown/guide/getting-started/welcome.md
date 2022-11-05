@@ -11,10 +11,3 @@ You will get $MEMI as $MESH at the end of every month to your account.
 1. Create your account. Guideline details [here](https://docs.stormgate.io/guide/getting-started/create-account)
 2. Fill in ["Collect Builder's wallet address" form](https://forms.gle/CsoosFXAUpRticNs6) (1st time only)
 3. Contribute and follow the summary at the end of every month to know how many $MESH you get that month
-
-### How to view your balance?
-1. Navigate to [Stormgate.io](https://stormgate.io/)
-2. Sign-in
-3. Observe balance displayed the left side of your account
-OR 
-Navigate to [Profile page](https://stormgate.io/profile) and view your $MESH
