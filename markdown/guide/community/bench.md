@@ -22,6 +22,11 @@ Easy to start new conversation on Bench by
 1. Tap on `What your through?`
 ![alt text](https://cdn.stormgate.io/documents/bench/Start-new-conversation.png)
 2. Input Title and Body by simple markdown syntax
+``*itallic*``
+``**bold**``
+``mark `as` code``
+``[insert link](url)``
+``![image](imageUrl)``
 ![alt text](https://cdn.stormgate.io/documents/bench/input-thread.png)
 3. Click on `Post` to complete posting new thread
 
