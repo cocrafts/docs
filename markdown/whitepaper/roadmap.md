@@ -33,23 +33,40 @@ Work on important features
 - [x] Migrate `MEMI` to new address
 - [x] Whitepaper ver.2
 - [x] Pitch deck ver.2
-- [ ] Private sale #2
-- [ ] Collaboration Platform MVP
-- [ ] Under Realm Pre-Alpha
-- [ ] Stormgate Mobile Application
+- [x] Collaboration Platform MVP (Metacraft Bench)
+- [x] Under Realm Pre-Alpha
+- [x] Stormgate Mobile Application (Testflight)
 
 **Quarter 4:**
 
-- [ ] Private sale #3
-- [ ] Under Realm Alpha
-- [ ] Collaboration Platform
-- [ ] NFT minting
-- [ ] Marketplace launch
-- [ ] Liquidity Pool
+- [x] NFT minting
+- [x] Private sale #2
+- [x] Metacraft Bench MVP: Public Test
+- [x] Under Realm Alpha (Soft Launch)
+
 
 #### Year 2023
 
-- [ ] Under Realm Beta
-- [ ] Staking
-- [ ] Public sale
+**Quarter 1:**
 
+- [ ] Under Realm Soft launch: Playable, Spell card, etc.
+- [ ] Stormgate website update
+
+**Quarter 2:**
+
+- [ ] Metacraft Bench update
+- [ ] Under Realm leaderboard
+- [ ] Under Realm alpha
+
+**Quarter 3:**
+
+- [ ] Private sale #3
+
+**Quarter 4:**
+
+- [ ] Liquidity Pool
+- [ ] Staking
+
+
+#### Year 2024 & onwards
+- [ ] Public sale
